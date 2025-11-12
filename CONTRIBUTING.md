@@ -13,3 +13,6 @@ contributions to that work is more than welcome.
 I would also welcome any contributions to the beautification
 of the sheet music itself. Lilypond appears feature rich
 and it will take me a while to learn it.
+
+I've added
+[notes on writing music to the `/notes` directory](/notes/writing-music.md).
