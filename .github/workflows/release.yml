@@ -1,0 +1,39 @@
+name: Publish PDFs on Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Build Docker image
+        run: docker build -t lilypond-builder .
+      
+      - name: Find and convert all .ly files to PDF
+        run: |
+          mkdir -p output
+          find . -name "*.ly" -type f | while read lyfile; do
+            echo "Converting: $lyfile"
+            filename=$(basename "$lyfile" .ly)
+            docker run --rm -v "$(pwd):/workspace" -v "$(pwd)/output:/output" lilypond-builder \
+              lilypond --output="/output/$filename" "/workspace/$lyfile"
+          done
+      
+      - name: List generated PDFs
+        run: ls -lh output/
+      
+      - name: Create Release and Upload PDFs
+        uses: softprops/action-gh-release@v2
+        with:
+          files: output/*.pdf
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
