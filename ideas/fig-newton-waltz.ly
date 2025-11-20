@@ -10,6 +10,22 @@ violinMusic = \relative c'' {
   \time 3/4
   \key f \major
   
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
   r4 c4( d4 ) |
   \tuplet 3/2 { e8[ bes g] } \tuplet 3/2 { d'8[ bes g] } \tuplet 3/2 { c8[ bes g] } |
   \tuplet 3/2 { c8[ bes g] } \tuplet 3/2 { d'8[ bes g] } \tuplet 3/2 { e'8[ bes g] } |
@@ -29,6 +45,23 @@ accordionRight = \relative c' {
   r2. |
   r4 <g'' bes c e >4-. <g bes c e >4-. |
   r4 <g bes c e >4-. <g bes c e >4-. |
+  r4 <g bes c e >4-. <g bes c e >4-. |
+  r4 <g bes c e >4-. <g bes c e >4-. |
+  r4 <a c f >4-. <a c f >4-. |
+  r4 <a c f >4-. <a c f >4-. |
+  r4 <a c f >4-. <a c f >4-. |
+  r4 <a c f >4-. <a c f >4-. |
+  r4 <g bes c e >4-. <g bes c e >4-. |
+  r4 <g bes c e >4-. <g bes c e >4-. |
+  r4 <g bes c e >4-. <g bes c e >4-. |
+  r4 <g bes c e >4-. <g bes c e >4-. |
+  r4 <a c f >4-. <a c f >4-. |
+  r4 <a c f >8-. <a c f >8-. <a c f >4-. |
+  <a c f >2. |
+  
+  r2. |
+  r4 <g bes c e >4-. <g bes c e >4-. |
+  r4 <g bes c e >4-. <g bes c e >4-. |
   r4 <a c f >4-. <a c f >4-. |
   r4 <a c f >4-. <a c f >4-. |
   r4 <g bes c e >4-. <g bes c e >4-. |
@@ -40,12 +73,29 @@ accordionRight = \relative c' {
 accordionLeft = \relative c {
   \clef bass
   \time 3/4
-  \key c \major
+  \key f \major
+  
+  r2. |
+  c4 c'4^\markup { "7" } c4 |
+  g4, c'4^\markup { "7" } c4 |
+  e,4_\markup { "_" } c'4 c4 |
+  g,4 c4'^\markup { "7" } c4 |
+  f,,4 f'4^\markup { "M" } f4 |
+  a,4_\markup { "_" } f'4 f4 |
+  f,4 f'4^\markup { "M" } f4 |
+  a,4_\markup { "_" } f'4 f4 |
+  c4 c'4^\markup { "7" } c4 |
+  g,4 c'4^\markup { "7" } c4 |
+  e,4_\markup { "_" } c'4 c4 |
+  g,4 c'4^\markup { "7" } c4 |
+  f,,4 f'4^\markup { "M" } f4 |
+  f,4 f'4^\markup { "M" } f4 |
+  <f, f'>2. |
   
   r2. |
   c4 c'4^\markup { "7" } c4 |
   e,4_\markup { "_" } c'4 c4 |
-  f,,4 f'4^\markup { "M" } f4 |
+  f,4 f'4^\markup { "M" } f4 |
   a,4_\markup { "_" } f'4 f4 |
   c4 c'4^\markup { "7" } c4 |
   e,4_\markup { "_" } c'4 c4 |
@@ -69,6 +119,6 @@ accordionLeft = \relative c {
   
   \layout { }
   \midi {
-    \tempo 4 = 75
+    \tempo 4 = 90
   }
 }
