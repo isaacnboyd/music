@@ -16,3 +16,14 @@ and it will take me a while to learn it.
 
 I've added
 [notes on writing music to the `/notes` directory](/notes/writing-music.md).
+
+## Release
+
+To generate the PDFs from this repo, execute a release
+by tagging the latest commit and pushing it upstream.
+Github Actions will find `.ly` files and create PDFs.
+These PDFs can be found in the release section.
+```
+git tag -a v1.0.1 -m "v1.0.1" 49b0903a27596f672d8b4f2b17a5d206aeb39bc9
+git push upstream v1.0.1
+```
