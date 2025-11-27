@@ -1,18 +1,19 @@
 \version "2.24.1"
 
 \header {
-  title = "Aslan's Theme"
+  title = "Aslan's Theme V1"
+  subtitle = "Arrangement for Accordion and Viola"
   composer = "Arrangement by Isaac Boyd"
   tagline = ##f
 }
 
-violinMusic = \relative c'' {
-  \clef treble
+violaMusic = \relative c'' {
+  \clef alto
   \numericTimeSignature
   \time 4/4
   \key a \major
   
-  e4 cis8[ e8 ] a4. gis8 |
+  e4, cis8[ e8 ] a4. gis8 |
   fis4. d8 e2 |
   e4 cis8[ a8 ] d4. e8  |
   cis4. d8 b2 |
@@ -21,6 +22,7 @@ violinMusic = \relative c'' {
   e4\! a8[ e8 ] d4. cis8 |
   b4. a8 a2 |
   \bar "||" \key c \major
+  R1 |
   R1 |
   e'4 c8[ e8 ] f4. a8 |
   f4. d8 e2 |
@@ -36,7 +38,8 @@ violinMusic = \relative c'' {
   e'4\< cis8[ e8 ] a4. b8 |
   cis4. b8\! a8\>[ fis8 e8 d8 ] |
   e4\! a8[ e8 ] d4. cis8 |
-  b4. a8 a2 |
+  b4. a8 a2 ( |
+  a1 ) |
 }
 
 accordionRight = \relative c' {
@@ -55,12 +58,13 @@ accordionRight = \relative c' {
   a4 gis4 <cis, e a>2 |
   \bar "||" \key c \major
   <a' c e>8^\markup { "Clarinet" } <a c e>8 <a c e>8 <a c e>8 <a c e>8 <a c e>8 <a c e>8 <a c e>8 |
+  <a c e>8 <a c e>8 <a c e>8 <a c e>8 <a c e>8 <a c e>8 <a c e>8 <a c e>8 |
   <a c e>8 <a c e>8 <a c e>8 <a c e>8 <a d f>8 <a d f>8 <a d f>8 <a d f>8 |
   <a d f>8 <a d f>8 <a d f>8 <a d f>8 <a c e>8 <a c e>8 <a c e>8 <a c e>8 |
   <a c e>8 <a c e>8 <a c e>8 <a c e>8 <a d f>8 <a d f>8 <a d f>8 <a d f>8 |
   <a c e>8 <a c e>8 <a c e>8 <a c e>8  <gis b d e>8 <gis b d e>8 <gis b d e>8 <gis b d e>8 |
   <g b e>8 <g b e>8 <g b e>8 <g b e>8 <a c e>8 <a c e>8 <a c e>8 <a c e>8 | |
-  <b d fis>8 <b d fis>8 <b d fis>8 <b d fis>8 <g b e>8 <g b e>8 <g b e>8 <g b e>8 |
+  <fis b d>8 <fis b d>8 <fis b d>8 <fis b d>8 <g b e>8 <g b e>8 <g b e>8 <g b e>8 |
   <g b e>8 <g b e>8 <g b e>8 <g b e>8 <a c e>8 <a c e>8 <a c e>8 <a c e>8|
   <g b e>8 <g b e>8 <g b e>8 <g b e>8 <fis c' dis>8 <fis c' dis>8 <fis c' dis>8 <fis c' dis>8 |
   <gis b d>8 <gis b d>8 <gis b d>8 <gis b d>8  <gis b e>8 <gis b e>8 <gis b e>8 <gis b e>8 |
@@ -69,7 +73,8 @@ accordionRight = \relative c' {
   cis4^\markup { "Bassoon" } a8[ cis8 ] fis1( |
   fis8)[ d8 cis8 b8 ] |
   cis4 fis8[ cis8 ] b2 |
-  a4 gis4 e2 |
+  a4 gis4 e2 ( |
+  e1 ) |
 }
 
 accordionLeft = \relative c {
@@ -88,6 +93,7 @@ accordionLeft = \relative c {
   d2 <a a'>2^\markup { "A" } |
   \bar "||" \key c \major
   <a a'>8^\markup { "Am" } <a a'>8 <a a'>8 <a a'>8 <a a'>8 <a a'>8 <a a'>8 <a a'>8 |
+  <a a'>8 <a a'>8 <a a'>8 <a a'>8 <a a'>8 <a a'>8 <a a'>8 <a a'>8 |
   <a a'>8 <a a'>8 <a a'>8 <a a'>8 <d d'>8^\markup { "Dm" } <d d'>8 <d d'>8 <d d'>8 |
   <d d'>8 <d d'>8 <d d'>8 <d d'>8 <a a'>8^\markup { "Am" } <a a'>8 <a a'>8 <a a'>8 |
   <a a'>8 <a a'>8 <a a'>8 <a a'>8 <d d'>8^\markup { "Dm" }\< <d d'>8 <d d'>8 <d d'>8 |
@@ -102,14 +108,14 @@ accordionLeft = \relative c {
   a1 |
   cis2_\markup { "_" } d2 |
   cis2_\markup { "_" } d2 |
-  d2 <a a'>2^\markup { "A" } |
+  d2 <a a'>2^\markup { "A" }( |
+  <a a'>1 ) |
 }
-
 \score {
   <<
     \new Staff \with {
-      instrumentName = "Violin"
-    } \violinMusic
+      instrumentName = "Viola"
+    } \violaMusic
     
     \new PianoStaff \with {
       instrumentName = "Accordion"
