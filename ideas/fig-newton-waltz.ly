@@ -77,9 +77,9 @@ accordionLeft = \relative c {
   
   r2. |
   c4 c'4^\markup { "7" } c4 |
-  g4, c'4^\markup { "7" } c4 |
+  g,4 c'4^\markup { "7" } c4 |
   e,4_\markup { "_" } c'4 c4 |
-  g,4 c4'^\markup { "7" } c4 |
+  g,4 c'4^\markup { "7" } c4 |
   f,,4 f'4^\markup { "M" } f4 |
   a,4_\markup { "_" } f'4 f4 |
   f,4 f'4^\markup { "M" } f4 |
