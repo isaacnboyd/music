@@ -13,7 +13,7 @@ violaMusic = \relative c'' {
   \time 4/4
   \key a \major
   
-  e4, cis8[ e8 ] a4. gis8 |
+  e,4 cis8[ e8 ] a4. gis8 |
   fis4. d8 e2 |
   e4 cis8[ a8 ] d4. e8  |
   cis4. d8 b2 |
