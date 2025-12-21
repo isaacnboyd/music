@@ -13,3 +13,13 @@ Musical expressions should contain an even number of measures. For example:
 A waltz beginning with `cmaj` should begin with at least
 `c4 <c e g>4 <c e g>4 | c4 <c e g>4 <c e g>4` and at most
 `c4 <c e g>4 <c e g>4 | c4 <c e g>4 <c e g>4` x `y`.
+
+## Hymns
+
+When arranging hymns from the book, you will often be converting the original,
+written for 2 voices in the left hand and 2 voices in the right, to an accordian
+arrangment with 1 voice in the left hand and 3 voices in the right. Try to decrease
+repeats and include all voices represented in the chord. For example, say no to
+`<f, f a>` and say yes to `<f, c a>`. Use refrain, accordion hymns can be beautiful
+without pulling all stops and using all the buttons. The voicings and harmonies
+are where it's at.
