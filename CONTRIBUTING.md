@@ -27,3 +27,11 @@ These PDFs can be found in the release section.
 git tag -a v1.0.1 -m "v1.0.1" 49b0903a27596f672d8b4f2b17a5d206aeb39bc9
 git push upstream v1.0.1
 ```
+## PDF generation
+
+There are markdown documents on this repo that I convert
+to PDFs using pandoc.
+For example:
+```
+pandoc cellist-wanted.md -o cellist-wanted.pdf --pdf-engine=pdflatex
+```
