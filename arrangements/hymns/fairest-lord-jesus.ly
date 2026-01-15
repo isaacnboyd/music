@@ -24,20 +24,20 @@ accordionRight = \relative c' {
     { bes'4 g4 <f a>4 <f a>4 }
     \\
     { e2 s2 }
-  >>
+  >> \break
   <f a>4 <f a>4 <f c'>4 <f bes>4 |
   <f a>2 <e g c>2 |
-  <c f a>1 \bar "||"
+  <c f a>1 \bar "||" 
   \repeat volta 2 {
-  <c f>2 <c f>4 <c f>4 |
+  <c f>2 <c f>4 <c f>4 | \break
   <d g>4 <c e>4 <c f>2 |
   <f a>4. <f a>8 <fis a>4 <fis a>4   |
   <d g bes>4 <e g>4 <c f a>2 |
-  <f a c>2 <f bes f'>4 <f d'>4 |
+  <f a c>2 <f bes f'>4 <f d'>4 | \break
   <f a c>2 <g bes>4 <f a>4 |
-  <e bes'>2 <f a>2 |
+  <c e bes'>2 <c f a>2 |
   <e c'>1 |
-  <f a c>2 <f d'>4 <f a c>4 |
+  <f a c>2 <f d'>4 <f a c>4 | \break
   <<
     { c'4 a4 <d, bes'>2 }
     \\
