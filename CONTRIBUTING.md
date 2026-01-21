@@ -15,7 +15,7 @@ of the sheet music itself. Lilypond appears feature rich
 and it will take me a while to learn it.
 
 I've added
-[notes on writing music to the `/notes` directory](/notes/writing-music.md).
+[notes on writing music to the `/etc/notes` directory](/etc/notes/writing-music.md).
 
 ## Release
 
