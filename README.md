@@ -2,7 +2,7 @@
 
 Musical pieces written for accordion and other instruments.
 
-![score](/images/front-repo-score.png)
+![score](/etc/images/front-repo-score.png)
 
 ## usage
 
@@ -14,6 +14,6 @@ right hand column.
 ## contributing
 
 There is a [contributing doc](/CONTRIBUTING.md) on the repo
-and a [collection of notes](/notes) on writing music as well.
+and a [collection of notes](/etc/notes) on writing music as well.
 [Lilypond](https://lilypond.org/doc/v2.24/Documentation/web/index)
 docs are great.
