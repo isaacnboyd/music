@@ -1,0 +1,12 @@
+title: Hello World
+description: A Jekyll site with just-the-docs theme
+theme: just-the-docs
+
+url: https://music.isaacnboyd.com
+baseurl: ""
+
+# Color scheme
+color_scheme: dark
+
+# Enable search
+search_enabled: true
