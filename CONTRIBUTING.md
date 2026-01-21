@@ -35,3 +35,15 @@ For example:
 ```
 pandoc cellist-wanted.md -o cellist-wanted.pdf --pdf-engine=pdflatex
 ```
+
+## Updating music.isaacnboyd.com
+
+To release changes in the `/site` directory to music.isaacnboyd.com,
+simply open a PR to the main branch and merge it. Test changes locally
+by executing `bundle install` and `bundle exec jekyll serve`.
+
+## Updating music.isaacnboyd.com infrastructure
+
+The Azure infrastructure is written in terraform. User needs to be
+logged into azure, then `cd site/terraform`, `terraform init`,
+and `terraform apply`.
