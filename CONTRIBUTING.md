@@ -27,6 +27,23 @@ These PDFs can be found in the release section.
 git tag -a v1.0.1 -m "v1.0.1" 49b0903a27596f672d8b4f2b17a5d206aeb39bc9
 git push upstream v1.0.1
 ```
+## Converting MusicXML to LilyPond
+
+To convert `.mxl` or `.xml` files to LilyPond format using Docker:
+
+1. Build the Docker image (first time only):
+```bash
+cd ci
+docker build -t music-ci .
+```
+
+2. Convert using the script with relative paths from the repository root:
+```bash
+./bin/musicxml2ly.sh style-musette-andre-verchuren.mxl style-musette.ly
+```
+
+The script automatically handles path conversion for Docker on Windows.
+
 ## PDF generation
 
 There are markdown documents on this repo that I convert
