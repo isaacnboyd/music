@@ -27,3 +27,14 @@ are where it's at.
 The sound most similar to an organ would be LH or LM if the accordion doesn't have
 piccolo. Use LM and play in the middle of keyboard. If you just use the clarinets
 then the bass will overpower it.
+
+## Voices and voicings
+
+When playing accordion, do not overwhelm the listener with all voices all the time,
+especially when accompanying other instruments or voices. Stradella only gives 3
+voices, including in the dominant 7th and diminished rows. You should do the same.
+For a dominant 7, do not play the 5th. For example: On `E7` play `<gis d e>`. Ditch
+the 5th (b) and leave room for the melodies.
+
+Add a 6th on an emphasis chord. For example if you are finishing a 6 measure phrase
+with a big `Dm`, play `d f a b` or `d f b`.
