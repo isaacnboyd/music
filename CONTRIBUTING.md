@@ -33,13 +33,13 @@ To convert `.mxl` or `.xml` files to LilyPond format using Docker:
 
 1. Build the Docker image (first time only):
 ```bash
-cd ci
+cd etc/ci
 docker build -t music-ci .
 ```
 
 2. Convert using the script with relative paths from the repository root:
 ```bash
-./bin/musicxml2ly.sh style-musette-andre-verchuren.mxl style-musette.ly
+./etc/bin/musicxml2ly.sh style-musette-andre-verchuren.mxl style-musette.ly
 ```
 
 The script automatically handles path conversion for Docker on Windows.
